@@ -17,6 +17,27 @@ public class User {
     private Integer modifyBy;   //更新者
     private Date modifyDate;    //更新时间
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userCode='" + userCode + '\'' +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", gender=" + gender +
+                ", birthday=" + birthday +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                ", userRole=" + userRole +
+                ", createBy=" + createBy +
+                ", creationDate=" + creationDate +
+                ", modifyBy=" + modifyBy +
+                ", modifyDate=" + modifyDate +
+                ", age=" + age +
+                ", userRoleName='" + userRoleName + '\'' +
+                '}';
+    }
+
     private Integer age;    //年龄
     private String userRoleName;    //用户角色名称
 

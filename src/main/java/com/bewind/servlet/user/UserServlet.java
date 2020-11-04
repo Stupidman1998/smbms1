@@ -3,6 +3,7 @@ package com.bewind.servlet.user;
 import com.alibaba.fastjson.JSONArray;
 import com.bewind.pojo.Role;
 import com.bewind.pojo.User;
+import com.bewind.service.role.RoleService;
 import com.bewind.service.role.RoleServiceImpl;
 import com.bewind.service.user.UserService;
 import com.bewind.service.user.UserServiceImpl;
@@ -16,6 +17,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -31,8 +35,42 @@ public class UserServlet extends HttpServlet {
         } else if (method.equals("pwdmodify") && method != null) {
             this.pwdModify(req, resp);
         } else if (method.equals("query") && method != null) {
-            this.query(req,resp);
+            this.query(req, resp);
+        } else if (method.equals("add") && method != null) {
+            this.add(req, resp);
+        } else if (method.equals("getrolelist") && method != null) {
+            this.getRoleList(req, resp);
+        } else if (method.equals("ucexist") && method != null) {
+            this.userCodeExist(req, resp);
         }
+    }
+
+    private void userCodeExist(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        String userCode = req.getParameter("userCode");
+
+        HashMap<String, String> resultMap = new HashMap<String, String>();
+        if(StringUtils.isNullOrEmpty(userCode)){
+            //userCode == null || userCode.equals("")
+            resultMap.put("userCode", "exist");
+        }else{
+            UserService userService = new UserServiceImpl();
+            User user = userService.selectUserCodeExist(userCode);
+            if(null != user){
+                resultMap.put("userCode","exist");
+            }else{
+                resultMap.put("userCode", "notexist");
+            }
+        }
+
+        //把resultMap转为json字符串以json的形式输出
+        //配置上下文的输出类型
+        resp.setContentType("application/json");
+        //从response对象中获取往外输出的writer对象
+        PrintWriter outPrintWriter = resp.getWriter();
+        //把resultMap转为json字符串 输出
+        outPrintWriter.write(JSONArray.toJSONString(resultMap));
+        outPrintWriter.flush();//刷新
+        outPrintWriter.close();//关闭流
     }
 
     @Override
@@ -41,7 +79,7 @@ public class UserServlet extends HttpServlet {
     }
 
     //查询方法
-    public void query(HttpServletRequest req, HttpServletResponse resp){
+    public void query(HttpServletRequest req, HttpServletResponse resp) {
 
         //查询用户列表
         //从前端获取数据
@@ -51,23 +89,23 @@ public class UserServlet extends HttpServlet {
         int queryUserRole = 0;
 
         //获取用户列表
-        UserServiceImpl userService = new  UserServiceImpl();
+        UserServiceImpl userService = new UserServiceImpl();
         List<User> userList = null;
 
         //第一次请求，一定是第一页
         int pageSize = 5;
         int currentPageNo = 1;
 
-        if(queryUserName == null){
+        if (queryUserName == null) {
             queryUserName = "";
         }
-        if (temp!=null && !temp.equals("")){
+        if (temp != null && !temp.equals("")) {
             queryUserRole = Integer.parseInt(temp);
         }
-        if (pageIndex!=null){
+        if (pageIndex != null) {
             currentPageNo = Integer.parseInt(pageIndex);
         }
-        
+
         //获取用户的总数
         int totalCount = userService.getUserCount(queryUserName, queryUserRole);
         //总页数支持
@@ -78,29 +116,29 @@ public class UserServlet extends HttpServlet {
 
         int totalPageCount = pageSupport.getTotalPageCount();
         //控制首页和尾页
-        if (currentPageNo<1){
+        if (currentPageNo < 1) {
             currentPageNo = 1;
-        } else if(currentPageNo>totalPageCount){
+        } else if (currentPageNo > totalPageCount) {
             currentPageNo = totalPageCount;
         }
 
         //获取用户列表展示
-        userList = userService.getUserList(queryUserName,queryUserRole,currentPageNo,pageSize);
-        req.setAttribute("userList",userList);
+        userList = userService.getUserList(queryUserName, queryUserRole, currentPageNo, pageSize);
+        req.setAttribute("userList", userList);
 
         //获取角色列表
         RoleServiceImpl roleService = new RoleServiceImpl();
         List<Role> roleList = roleService.getRoleList();
-        req.setAttribute("roleList",roleList);
-        req.setAttribute("totalCount",totalCount);
-        req.setAttribute("currentPageNo",currentPageNo);
-        req.setAttribute("totalPageCount",totalPageCount);
-        req.setAttribute("queryUserName",queryUserName);
-        req.setAttribute("queryUserRole",queryUserRole);
+        req.setAttribute("roleList", roleList);
+        req.setAttribute("totalCount", totalCount);
+        req.setAttribute("currentPageNo", currentPageNo);
+        req.setAttribute("totalPageCount", totalPageCount);
+        req.setAttribute("queryUserName", queryUserName);
+        req.setAttribute("queryUserRole", queryUserRole);
 
         //返回前端
         try {
-            req.getRequestDispatcher("userlist.jsp").forward(req,resp);
+            req.getRequestDispatcher("userlist.jsp").forward(req, resp);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -170,5 +208,52 @@ public class UserServlet extends HttpServlet {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void add(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        String userCode = req.getParameter("userCode");
+        String userName = req.getParameter("userName");
+        String userPassword = req.getParameter("userPassword");
+        String gender = req.getParameter("gender");
+        String birthday = req.getParameter("birthday");
+        String phone = req.getParameter("phone");
+        String address = req.getParameter("address");
+        String userRole = req.getParameter("userRole");
+
+        User user = new User();
+        user.setUserCode(userCode);
+        user.setUserName(userName);
+        user.setUserPassword(userPassword);
+        user.setAddress(address);
+        try {
+            user.setBirthday(new SimpleDateFormat("yyyy-MM-dd").parse(birthday));
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        user.setGender(Integer.valueOf(gender));
+        user.setPhone(phone);
+        user.setUserRole(Integer.valueOf(userRole));
+        user.setCreationDate(new Date());
+        user.setCreateBy(((User) req.getSession().getAttribute(Constants.USER_SESSION)).getId());
+
+        UserService userService = new UserServiceImpl();
+        if (userService.add(user)) {
+            resp.sendRedirect(req.getContextPath() + "/jsp/user.do?method=query");
+        } else {
+            req.getRequestDispatcher("useradd.jsp").forward(req, resp);
+        }
+    }
+
+    private void getRoleList(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        List<Role> roleList = null;
+        RoleService roleService = new RoleServiceImpl();
+        roleList = roleService.getRoleList();
+        //把roleList转换成json对象输出
+        resp.setContentType("application/json");
+        PrintWriter outPrintWriter = resp.getWriter();
+        outPrintWriter.write(JSONArray.toJSONString(roleList));
+        outPrintWriter.flush();
+        outPrintWriter.close();
     }
 }

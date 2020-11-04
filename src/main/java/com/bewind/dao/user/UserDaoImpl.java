@@ -12,6 +12,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDaoImpl implements UserDao {
+    public int add(Connection connection, User user) throws Exception {
+        PreparedStatement pstm = null;
+        int updateRows = 0;
+        if(null != connection){
+            String sql = "insert into smbms_user (userCode,userName,userPassword," +
+                    "userRole,gender,birthday,phone,address,creationDate,createBy) " +
+                    "values(?,?,?,?,?,?,?,?,?,?)";
+            Object[] params = {user.getUserCode(),user.getUserName(),user.getUserPassword(),
+                    user.getUserRole(),user.getGender(),user.getBirthday(),
+                    user.getPhone(),user.getAddress(),user.getCreationDate(),user.getCreateBy()};
+            System.out.println(sql);
+            System.out.println(user);
+            updateRows = BaseDao.execute(connection, pstm, sql, params);
+            BaseDao.closeResource(null, pstm, null);
+    }
+        return updateRows;
+    }
+
     //得到要登录的用户
     public User getLoginUser(Connection connection, String userCode) throws SQLException {
         PreparedStatement pstm = null;

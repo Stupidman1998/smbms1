@@ -16,4 +16,8 @@ public interface UserService {
 
     //根据条件查询用户表记录数
     public List<User> getUserList(String queryUserName, int queryUserRole, int currentPageNo, int pageSize);
+
+    public boolean add(User user);
+
+    public User selectUserCodeExist(String userCode);
 }
