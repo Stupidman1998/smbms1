@@ -9,124 +9,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13eb10fb-27db-4b4e-b93b-d0fe6daf3143" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/billadd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/billlist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/billmodify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/billview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/provideradd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/providerlist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/providermodify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/providerview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/useradd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/usermodify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/userview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/billadd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/billlist.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/billmodify.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/billview.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/provideradd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/providerlist.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/providermodify.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/providerview.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/useradd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/usermodify.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/userview.jsp" afterDir="false" />
+    <list default="true" id="13eb10fb-27db-4b4e-b93b-d0fe6daf3143" name="Default Changelist" comment="v1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bewind/dao/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bewind/dao/user/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bewind/dao/user/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bewind/dao/user/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bewind/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bewind/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bewind/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bewind/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bewind/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bewind/service/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bewind/servlet/user/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bewind/servlet/user/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bewind/dao/user/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bewind/dao/user/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bewind/dao/user/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bewind/dao/user/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bewind/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bewind/service/user/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bewind/service/user/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bewind/service/user/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bewind/servlet/user/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bewind/servlet/user/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/dao/BaseDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/dao/role/RoleDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/dao/role/RoleDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/dao/user/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/dao/user/UserDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/filter/CharacterEncodingFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/filter/SysFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/pojo/Bill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/pojo/Provider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/pojo/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/pojo/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/service/role/RoleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/service/role/RoleServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/service/user/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/service/user/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/servlet/user/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/servlet/user/LogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/servlet/user/UserServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/util/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/com/bewind/util/PageSupport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.74.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/lib/junit-4.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.21.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/My97DatePicker.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/WdatePicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/lang/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/lang/zh-cn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/lang/zh-tw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/skin/WdatePicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/skin/datePicker.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/skin/default/datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/skin/default/img.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/skin/whyGreen/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/skin/whyGreen/datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/calendar/skin/whyGreen/img.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/css/public.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/buy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/clock.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/formBg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/gys.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/leftBg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/loginBg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/login_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/login_img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/mm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/read.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/schu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/tc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/tianjia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/time.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/xiugai.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/y.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/yh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/images/zd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/js/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/js/jquery-1.8.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/js/pwdmodify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/js/rollpage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/js/time.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/js/userlist.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/jsp/common/foot.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/jsp/common/head.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/jsp/frame.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/jsp/pwdmodify.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/jsp/rollpage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/jsp/userlist.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smbms-1.0-SNAPSHOT/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bewind/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bewind/pojo/User.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -186,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bewind/pojo/Role.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-281">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="175">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -207,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bewind/service/user/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="59" column="32" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="32" />
+            <state relative-caret-position="170">
+              <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#419#420#0" expanded="true" />
@@ -555,7 +440,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -751,7 +636,7 @@
       <workItem from="1602763798144" duration="91000" />
       <workItem from="1602764009018" duration="1726000" />
       <workItem from="1603776669461" duration="2596000" />
-      <workItem from="1604470348207" duration="11036000" />
+      <workItem from="1604470348207" duration="11620000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0">
       <created>1603779900158</created>
@@ -760,7 +645,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603779900158</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v1.0">
+      <created>1604487643283</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604487643283</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -796,7 +688,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129937000" />
+    <option name="totallyTimeSpent" value="130521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -808,10 +700,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="160" width="1937" height="880" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.21257326" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.21268657" />
       <window_info id="Structure" order="1" sideWeight="0.5010395" side_tool="true" weight="0.14179105" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -821,7 +713,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32944915" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.43767706" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.335141" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29399368" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1210,21 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bewind/service/user/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="59" column="32" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="method#selectUserCodeExist#0;class#UserServiceImpl#0" />
-            <element signature="method#getUserList#0;class#UserServiceImpl#0" />
-            <element signature="method#updatePwd#0;class#UserServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bewind/servlet/user/UserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1722">
@@ -1283,8 +1160,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bewind/pojo/Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-281">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="175">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bewind/service/user/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="method#selectUserCodeExist#0;class#UserServiceImpl#0" />
+            <element signature="method#getUserList#0;class#UserServiceImpl#0" />
+            <element signature="method#updatePwd#0;class#UserServiceImpl#0" />
+          </folding>
         </state>
       </provider>
     </entry>
